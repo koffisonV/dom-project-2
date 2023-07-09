@@ -159,7 +159,5 @@ function restartGame() {
 }
 
 document.getElementById("submitBtn").addEventListener("click", checkGuess);
-
 document.getElementById("restartBtn").addEventListener("click", restartGame);
-
 window.addEventListener("load", restartGame);
