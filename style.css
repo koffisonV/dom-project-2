@@ -1,1 +1,92 @@
 /* Write your CSS code in this file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+p{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive!important;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 3rem 0 3rem 0;
+    background-color: rgb(219, 216, 216);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]{
+    text-align: center;
+    font-size: 25px;
+    height: 80px;
+    background-color: transparent;
+    border-radius: .5rem;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 10px;
+}
+
+#submitBtn{
+    margin-top: 1rem;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.block2{
+    display: grid;
+}
+
+.container__rules{
+    text-align: center;
+}
+
+.container__rules h3, h4{
+    padding: 1rem;
+    text-align: center;
+}
+
+ol{
+    display: inline-block;
+    border: 2px solid black;
+    padding-right: 2rem;
+    text-align: left;
+    border-radius: .5rem;
+    font-size: 10px;
+}
+
+footer p{
+    padding: 2rem;
+    text-align: center;
+    font-size: 10px;
+}

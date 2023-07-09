@@ -5,10 +5,53 @@
     <title>Guessing Game</title>
     <link rel="stylesheet" href="style.css" />
     <!-- the style.css file is linked here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <!-- <script src='js/guessing-game.js'></script> -->
+    <div class="container">
+      <h1>Guess The Number</h1>
+      <button type="button" id="restartBtn" class="btn btn-primary button_top" disabled>Play</button>
+      <br><br>
+
+      <div class="block">
+        <div class="block1">
+          <p>Let's Start Guessing</p>
+          <p>Score: <span id="score">10</span></p>
+          <p>Highscore: <span id="highscore">0</span></p>
+        </div>
+        <div class="block2">
+          <p id="message"></p>
+          <input type="number" id="inputUser" min="1" max="100">
+          <button type="submit" id="submitBtn" class="btn btn-success">Check</button>
+        </div>
+      </div>
+
+      <br><br>
+      
+      <div class="container__rules">
+        <ol class="rules">
+          <h3>Rules:</h3>
+          <li>Press Play to begin</li>
+          <li>Choose a number between 1-100</li>
+          <li>You have 10 chances to gues correctly</li>
+          <li>You lose if your score reach 0</li>
+          <li>Try to be your score</li>
+          <h4>Good luck!</h4>
+        </ol>
+      </div>
+    </div>
+    
+
+    <footer>
+      <p>© Copyright Koffison Voumadi</p>
+    </footer>
+    <script src='js/guessing-game.js'></script>
     <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
